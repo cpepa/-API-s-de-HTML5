@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>  
+
+<meta charset="UTF-8">
+  
+<script src="carga-archivos.js"></script>  
+
+</head>
+
+<body>
+
+<p> Video almacenado en el disco duro</p>
+
+<input type='file' accept='video/*' onchange='readFile(event)'><br>
+
+<video id='output' onprogress="myFunction()"></video>
+
+<div>
+
+<button onclick="document.getElementById('output').play();">Reproducir</button>
+
+<button onclick="document.getElementById('output').pause();">Pausa</button>
+
+<button onclick="document.getElementById('output').volume +=0.1;">Subir Volumen</button>
+
+<button onclick="document.getElementById('output').volume -=0.1;">Bajar Volumen</button>
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+
+</html>
